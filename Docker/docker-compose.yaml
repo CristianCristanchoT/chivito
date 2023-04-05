@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+
+  pytorch_notebook_server:
+    build:
+       context: ./pytorch_notebook
+       dockerfile: ./Dockerfile
+    container_name: pytorch_notebook_container
+    volumes:
+        - ../Notebooks:/workdir/Notebooks
+        - ../Data:/workdir/Data
+        - ../Scripts:/workdir/Scripts
+        - ../Models:/workdir/Models
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
