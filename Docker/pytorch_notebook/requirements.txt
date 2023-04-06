@@ -18,5 +18,5 @@ sentencepiece==0.1.97
 fire==0.5.0
 gradio==3.24.1
 sacremoses==0.0.53
-git+https://github.com/huggingface/transformers.git@v4.27.3
+git+https://github.com/mbehm/transformers
 git+https://github.com/huggingface/peft.git@v0.2.0
