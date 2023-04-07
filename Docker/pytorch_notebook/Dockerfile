@@ -6,8 +6,6 @@ RUN apt-get install ffmpeg xvfb libsm6 libxext6 git -y
 COPY ./requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-ENV TRANSFORMERS_CACHE=/workdir/models/cache/
-
 RUN jt -t monokai -f fira -fs 10 -nf ptsans -nfs 11 -N -kl -cursw 2 -cursc r -cellw 95% -T
 
 EXPOSE 8888

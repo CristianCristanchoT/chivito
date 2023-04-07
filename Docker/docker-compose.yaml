@@ -7,6 +7,7 @@ services:
        context: ./pytorch_notebook
        dockerfile: ./Dockerfile
     container_name: pytorch_notebook_container
+    restart: always
     volumes:
         - ../Notebooks:/workdir/Notebooks
         - ../Data:/workdir/Data
