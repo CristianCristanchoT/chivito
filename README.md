@@ -30,8 +30,8 @@ Luego de esto solo es necesario ejecutar el script **start_env.sh** el cual har√
 El tiempo requerido para √©l fine-tunning del modelo Llama 7B fue de aproximadamente de 8 horas empleando una GPU RTX 3090 Ti.
 
 <div style="text-align:center;">
-  <img src="Assets/train_loss.png" style="display:inline-block;">
-  <img src="Assets/eval_loss.png" style="display:inline-block;">
+  <img src="Assets/train_loss.png" style="display:inline-block; width: 40%; margin: auto">
+  <img src="Assets/eval_loss.png" style="display:inline-block; width: 40%; margin: auto">
 </div>
 
 Y al evaluar el modelo se obtuvieron los siguientes resultados (Los resultados se comparan con ChatGPT 3.5):
@@ -163,7 +163,7 @@ public class FizzBuzz {
 Para ejecutar un demo en tiempo real se dispone del script de python **gradio_chivito_7b.py** el cual cuenta con lo necesario para desplegar un demo en gradio en el cual se puede interactuar de una mejor manera con el modelo.
 
 <p align="center" width="100%">
-<img src="Assets/gradio_demo.png" alt="Chivito" style="width: 20%; min-width: 900px; display: block; margin: auto;">
+<img src="Assets/gradio_demo.png" alt="Chivito" style="width: 80%; display: block; margin: auto;">
 </p>
 
 
